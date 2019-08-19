@@ -1,0 +1,30 @@
+<div class="show-page">
+  <div class="image-half">
+    <p>h</p>
+  </div>
+  <div class="desc-half">
+    <h1>Welcome to <%= @flat.name %></h1>
+    <p><%= @flat.description %></p>
+    <p>Price: <%= @flat.price %>€</p>
+    <p><%= link_to "Book", new_flat_booking_path(@flat), class: "my-button" %></p>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+<%= link_to "Edit this flat", edit_flat_path %>
+
+
+
+<%= link_to "Delete", flat_path(@flat),
+      method: :delete,
+      data: { confirm: "Are you sure?" } %>
+
+
+
+<%= link_to "Show all flats", flats_path %>

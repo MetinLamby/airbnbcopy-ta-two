@@ -1,0 +1,138 @@
+.row {
+  a {
+    color: black;
+  }
+  a:hover {
+    color: black;
+  }
+}
+
+.flat-card {
+  box-shadow: 0 0 10px #000D19;
+  height: 500px;
+  width: auto;
+  border-radius: 10px;
+  margin-top: 40px;
+}
+
+.flat-card:hover {
+  box-shadow: 0 0 25px #000D19;
+  transition: box-shadow 300ms linear;
+  border: none;
+  transform: scale(1.02);
+  transition: transform 300ms linear;
+}
+
+.flat-card:hover .flat-card-price{
+  padding: 0 14px;
+}
+
+
+.flat-card-product-image {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 60%;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  /*background: lightgrey;*/
+  background-position: center;
+  background-size: cover;
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("small-banner.jpg");
+  .large-flat-bottle {
+    height: 300px;
+    width: auto;
+  }
+  .product-img-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+  }
+  .product-fruit-icons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
+
+.flat-card-product-fruits {
+  margin-top: -30px;
+  margin-left: 10px;
+  .fruiticon {
+    height: 40px;
+    width: 40px;
+    margin-top: -20px;
+    margin-right: 10px;
+  }
+}
+
+.flat-card-price {
+  position: absolute;
+  bottom: 0;
+  left: 15px;
+  right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  height: 15%;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  p {
+    margin-bottom: 0;
+  }
+  .add-btn {
+    color: #FF6B6B;
+  }
+}
+
+/*.flat-card-price:hover {
+  background: #FFE1E1;
+  transition: background 200ms linear;
+  border-top: none;
+}
+
+.flat-card-price:hover .price{
+  color: black
+}*/
+
+.flat-card-info {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  height: 25%;
+  width: 100%;
+  padding: 20px;
+  margin-top: 6px;
+  .flat-name {
+    margin-top: 20px;
+  }
+
+}
+
+.sweet-secret {
+  background: #FF443A
+}
+
+.exotic-foreplay {
+  background: #FFC914
+}
+
+.fruity-fetish {
+  background: #FF006E
+}
+
+.heavy-hickey {
+  background: #CE212C
+}
+
+.flavorful-flirt {
+  background: #9E0059
+}
+
+.rich-confession {
+  background: #C62137
+}
+

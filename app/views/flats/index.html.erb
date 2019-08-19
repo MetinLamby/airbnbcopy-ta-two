@@ -1,0 +1,46 @@
+<div class="small-banner">
+  <h1>Our Flats</h1>
+  <p>Rent your flat now!</p>
+</div>
+
+
+
+<div class="container", style="margin-bottom: 50px;">
+  <div class="row">
+    <% @flats.each do |flat| %>
+    <div class="col-lg-4 col-md-6 col-sm-12">
+      <%= link_to flat_path(flat) do  %>
+      <div class="flat-card">
+        <div class="flat-card-product-image">
+          <!-- flat image goes here -->
+        </div>
+        <div class="flat-card-info">
+          <div>
+            <h4 class="flat-name"><%= flat.name.capitalize %></h4>
+          </div>
+          <div>
+            <p><%= flat.description %></p>
+          </div>
+        </div>
+        <div class="flat-card-price">
+          <p class="price"><%= flat.price %>€</p>
+          <p id="red-flats" class="add-btn">Check it out</p>
+        </div>
+      </div>
+      <% end %>
+    </div>
+    <% end %>
+  </div>
+</div>
+
+
+<div>
+  <%= link_to "Add a new flat", new_flat_path %>
+</div>
+
+
+
+
+
+
+

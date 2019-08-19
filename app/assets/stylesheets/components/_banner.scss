@@ -1,0 +1,50 @@
+.banner {
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("banner-flat.jpg");
+  background-size: cover;
+  height: 93vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-position: center;
+  h1 {
+    color: white;
+    margin-bottom: 20px;
+  }
+  p {
+    color: white;
+  }
+  a {
+    color: white;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+/*  .my-button {
+    transform: scale(2);
+  }
+  .my-button:hover {
+    border: solid 1px #F7B538;
+    color: #F7B538;
+  }*/
+}
+
+.small-banner {
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("small-banner.jpg");
+  background-size: cover;
+  height: 40vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-position: center;
+  h1 {
+    color: white;
+    margin-bottom: 20px;
+  }
+  p {
+    color: white;
+  }
+}

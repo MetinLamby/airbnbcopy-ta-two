@@ -1,0 +1,13 @@
+.my-button {
+  border: solid 1px grey;
+  border-radius: 3px;
+  padding: 10px;
+}
+
+.my-button {
+  transform: scale(2);
+}
+.my-button:hover {
+  border: solid 1px #F7B538;
+  color: #F7B538;
+}
