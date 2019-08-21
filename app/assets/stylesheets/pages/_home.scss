@@ -1,1 +1,55 @@
-// Specific CSS for your home-page
+
+
+
+.outter {
+  background: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: auto;
+
+  .inner-left {
+    height: 100%;
+    width: 70% !important;
+    background: green;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .inner-right {
+    height: 100%;
+    width: 30% !important;
+    background: blue;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+
+
+
+@media only screen and (min-width: 320px) {
+  .outter {
+    flex-direction: column;
+    .inner-left {
+      width: 100% !important;
+    }
+
+    .inner-right {
+      width: 100% !important;
+    }
+  }
+
+
+}
+
+
+/*Small mac*/
+@media only screen and (min-width: 1030px) {
+  .outter {
+    flex-direction: row;
+  }
+}
+
